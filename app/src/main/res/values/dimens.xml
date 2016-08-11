@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="ten_dip">10.0dip</dimen>
+    <dimen name="fourteen_sp">14.0sp</dimen>
+    <dimen name="five_dip">5.0dip</dimen>
+    <dimen name="thirteen_sp">13.0sp</dimen>
+    <dimen name="twelve_dip">12.0dip</dimen>
+    <dimen name="sixteen_sp">16.0sp</dimen>
+    <dimen name="btn_submit_margin_top">30.0dip</dimen>
+    <dimen name="fifteen_dip">15.0dip</dimen>
+    <dimen name="btn_submitpadding_top_btm">9.0dip</dimen>
+    <dimen name="ten_sp">10.0sp</dimen>
+    <dimen name="eighteen_sp">18.0sp</dimen>
+    <dimen name="twenty_dip">20.0dip</dimen>
+    <dimen name="fourty_dip">40.0dip</dimen>
+    <dimen name="three_dip">3.0dip</dimen>
+    <dimen name="seven_dip">7.0dip</dimen>
+    <dimen name="twelve_sp">12.0sp</dimen>
+    <dimen name="apply_job_padding_left_right">15.0dip</dimen>
+    <dimen name="btn_text_zize">14.0sp</dimen>
+    <dimen name="twenty_4_dip">24.0dip</dimen>
+    <dimen name="seventeen_sp">17.0sp</dimen>
+    <dimen name="eight_dip">8.0dip</dimen>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/resume_heading"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffedeef2"
+                    android:gravity="center|left"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/resume_heading_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ten_dip"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/ten_dip"
+                        android:paddingRight="@dimen/ten_dip"
+                        android:paddingTop="@dimen/ten_dip"
+                        android:text="Upload your resume to complete registration"
+                        android:textColor="#ff757575"
+                        android:textSize="@dimen/fourteen_sp" />
+
+                    <TextView
+                        android:id="@+id/resume_heading_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ten_dip"
+                        android:gravity="center|left"
+                        android:padding="@dimen/ten_dip"
+                        android:text="You'll need the resume to apply for jobs"
+                        android:textColor="#ff999999"
+                        android:textSize="@dimen/twelve_sp" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/mobile_invisible"
+                    android:layout_width="fill_parent"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ten_dip"
+                    android:layout_marginLeft="@dimen/ten_dip"
+                    android:layout_marginRight="@dimen/ten_dip"
+                    android:background="@drawable/border_for_konnect_buttons"
+                    android:clickable="true"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/ten_dip"
+                        android:layout_marginLeft="@dimen/twenty_dip"
+                        android:layout_marginTop="@dimen/ten_dip"
+                        android:src="@drawable/ic_mobile" /> />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25.0dip"
+                        android:text="Mobile"
+                        android:textColor="#ff757575"
+                        android:textSize="@dimen/sixteen_sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/dropbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ten_dip"
+                    android:layout_marginLeft="@dimen/ten_dip"
+                    android:layout_marginRight="@dimen/ten_dip"
+                    android:background="@drawable/border_for_konnect_buttons"
+                    android:clickable="true"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/ten_dip"
+                        android:layout_marginLeft="@dimen/twenty_dip"
+                        android:layout_marginTop="@dimen/ten_dip"
+                        android:src="@drawable/ic_mobile" /> />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25.0dip"
+                        android:text="Mobile"
+                        android:textColor="#ff757575"
+                        android:textSize="@dimen/sixteen_sp" />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="@dimen/twenty_dip"
+                    android:text="Note:"
+                    android:textColor="#ff999999"
+                    android:textSize="@dimen/twelve_sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="20.0dip"
+                    android:text="-Supported Formats PDF, DOC, DOCX, RTF, TXT files"
+                    android:textColor="#ff999999"
+                    android:textSize="@dimen/twelve_sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="20.0dip"
+                    android:text="-File size should not exceed 300 KB"
+                    android:textColor="#ff999999"
+                    android:textSize="@dimen/twelve_sp" />
+
+                <LinearLayout
+                    android:id="@+id/skip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="@dimen/ten_dip"
+                    android:layout_marginTop="@dimen/twenty_dip"
+                    android:background="@drawable/button_trans_apply"
+                    android:clickable="true"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/apply_job_padding_left_right"
+                    android:paddingRight="@dimen/apply_job_padding_left_right">
+
+                    <TextView
+                        android:id="@+id/btn_lable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10.0dip"
+                        android:text="Proceed"
+                        android:textColor="#ff757575"
+                        android:textSize="@dimen/btn_text_zize" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/ten_dip">
+
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten_dip"
+                android:layout_marginRight="@dimen/ten_dip"
+                android:layout_marginTop="@dimen/twenty_dip"
+                android:background="@drawable/box_profile_items"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/ten_dip"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/profile_block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/five_dip"
+                    android:paddingLeft="@dimen/five_dip"
+                    android:paddingTop="@dimen/ten_dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="@dimen/five_dip"
+                        android:text="Current Designation"
+                        android:textColor="#ff5c6bc0"
+                        android:textSize="@dimen/eighteen_sp" />
+
+                    <TextView
+                        android:id="@+id/profile_col_exp_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="@dimen/five_dip"
+                        android:textColor="#ff4f86c7"
+                        android:textSize="20.0sp" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_profile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten_dip"
+                        android:textColorHint="@color/lableColor"
+                        >
+
+                        <EditText
+                            android:id="@+id/job_profile"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center|left"
+                            android:hint="Software developer"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:paddingBottom="@dimen/ten_dip"
+                            android:paddingTop="@dimen/five_dip"
+                            android:singleLine="true"
+                            android:textColor="#ff757575"
+                            android:textSize="@dimen/fourteen_sp"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/five_dip"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/eight_dip"
+                        android:text="eg Delivery manger,Marketing"
+                        android:textColor="#ff999999"
+                        android:textSize="@dimen/twelve_sp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_salary"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/five_dip"
+                        android:textColorHint="@color/lableColor"
+                        >
+                        <EditText
+                            android:id="@+id/salary_area_field"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/functionalArea_text"
+                            android:drawableRight="@drawable/textdropdown_arrow"
+                            android:editable="false"
+                            android:ellipsize="end"
+                            android:gravity="center|left"
+                            android:hint="Current salary in lakh"
+                            android:imeOptions="actionNext"
+                            android:inputType="none"
+                            android:paddingBottom="@dimen/ten_dip"
+                            android:paddingLeft="@dimen/eight_dip"
+                            android:paddingTop="@dimen/five_dip"
+                            android:singleLine="true"
+                            android:textColor="#ff757575"
+                            android:textSize="@dimen/fourteen_sp"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

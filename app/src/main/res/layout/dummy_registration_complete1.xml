@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/ten_dip">
+
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffedeef2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ten_dip"
+                    android:layout_marginTop="@dimen/ten_dip"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/five_dip"
+                    android:paddingRight="@dimen/five_dip"
+                    android:text="resume_upload_header"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fourteen_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten_dip"
+                android:layout_marginRight="@dimen/ten_dip"
+                android:layout_marginTop="@dimen/twenty_dip"
+                android:background="@drawable/box_profile_items"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/ten_dip"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/profile_block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/five_dip"
+                    android:paddingLeft="@dimen/five_dip"
+                    android:paddingTop="@dimen/ten_dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="@dimen/five_dip"
+                        android:text="Current Designation"
+                        android:textColor="#ff5c6bc0"
+                        android:textSize="@dimen/eighteen_sp" />
+
+                    <TextView
+                        android:id="@+id/profile_col_exp_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="@dimen/five_dip"
+                        android:textColor="#ff4f86c7"
+                        android:textSize="20.0sp" />
+                </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                                                <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_profile"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ten_dip"
+                            android:textColorHint="@color/lableColor"
+                           >
+
+                            <EditText
+                                android:id="@+id/job_profile"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center|left"
+                                android:hint="Software developer"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:paddingBottom="@dimen/ten_dip"
+                                android:paddingTop="@dimen/five_dip"
+                                android:singleLine="true"
+                                android:textColor="#ff757575"
+                                android:textSize="@dimen/fourteen_sp"
+                               />
+</android.support.design.widget.TextInputLayout>
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/five_dip"
+                            android:gravity="left"
+                            android:paddingLeft="@dimen/eight_dip"
+                            android:text="eg Delivery manger,Marketing"
+                            android:textColor="#ff999999"
+                            android:textSize="@dimen/twelve_sp" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_salary"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dip"
+                            android:textColorHint="@color/lableColor"
+                           >
+                            <EditText
+                                android:id="@+id/salary_area_field"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/functionalArea_text"
+                                android:drawableRight="@drawable/textdropdown_arrow"
+                                android:editable="false"
+                                android:ellipsize="end"
+                                android:gravity="center|left"
+                                android:hint="Current salary in lakh"
+                                android:imeOptions="actionNext"
+                                android:inputType="none"
+                                android:paddingBottom="@dimen/ten_dip"
+                                android:paddingLeft="@dimen/eight_dip"
+                                android:paddingTop="@dimen/five_dip"
+                                android:singleLine="true"
+                                android:textColor="#ff757575"
+                                android:textSize="@dimen/fourteen_sp"
+                               />
+                    </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/e_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ten_dip"
+                android:layout_marginLeft="@dimen/ten_dip"
+                android:layout_marginRight="@dimen/ten_dip"
+                android:layout_marginTop="@dimen/twenty_dip"
+                android:background="@drawable/box_profile_items"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/ten_dip"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/emp_block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/five_dip"
+                    android:paddingLeft="@dimen/five_dip"
+                    android:paddingTop="@dimen/ten_dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="@dimen/five_dip"
+                        android:text="Job details"
+                        android:textColor="#ff5c6bc0"
+                        android:textSize="@dimen/eighteen_sp" />
+
+                    <TextView
+                        android:id="@+id/emp_col_exp_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="@dimen/five_dip"
+                        android:textColor="#ff4f86c7"
+                        android:textSize="20.0sp" />
+                </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/job_heading"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/five_dip"
+                            android:paddingLeft="@dimen/eight_dip"
+                            android:paddingTop="@dimen/ten_dip"
+                            android:text="Job details"
+                            android:textColor="@color/blueSecond"
+                            android:textSize="@dimen/seventeen_sp"
+                            android:visibility="gone" />
+
+                        <android.support.design.widget.TextInputLayout
+
+                            android:id="@+id/input_layout_job_title"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dip"
+                            android:textColorHint="@color/lableColor"
+                           >
+
+                            <EditText
+                                android:id="@+id/job_title_field"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center|left"
+                                android:hint="hint_job_title"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:paddingBottom="@dimen/ten_dip"
+                                android:paddingTop="@dimen/five_dip"
+                                android:singleLine="true"
+                                android:textColor="#ff757575"
+                                android:textSize="@dimen/fourteen_sp"
+                               />
+</android.support.design.widget.TextInputLayout>
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_comp_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dip"
+                            android:textColorHint="@color/lableColor"
+                           >
+
+                            <EditText
+                                android:id="@+id/comp_name_field"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center|left"
+                                android:hint="hint_comp_name"
+                                android:inputType="text"
+                                android:paddingBottom="@dimen/ten_dip"
+                                android:paddingTop="@dimen/five_dip"
+                                android:singleLine="true"
+                                android:textColor="#ff757575"
+                                android:textSize="@dimen/fourteen_sp"
+                               />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_functional_area"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dip"
+                            android:textColorHint="@color/lableColor"
+                           >
+
+                            <EditText
+                                android:id="@+id/functional_area_field"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/functionalArea_text"
+                                android:drawableRight="@drawable/textdropdown_arrow"
+                                android:editable="false"
+                                android:ellipsize="end"
+                                android:gravity="center|left"
+                                android:hint="Functional area"
+                                android:imeOptions="actionNext"
+                                android:inputType="none"
+                                android:paddingBottom="@dimen/ten_dip"
+                                android:paddingTop="@dimen/five_dip"
+                                android:singleLine="true"
+                                android:textColor="#ff757575"
+                                android:textSize="@dimen/fourteen_sp"
+                               />
+                        </android.support.design.widget.TextInputLayout>
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_industry"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dip"
+                            android:textColorHint="@color/lableColor"
+                           >
+
+                            <EditText
+                                android:id="@+id/industry_area_field"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/functionalArea_text"
+                                android:drawableRight="@drawable/textdropdown_arrow"
+                                android:editable="false"
+                                android:ellipsize="end"
+                                android:gravity="center|left"
+                                android:hint="Industry"
+                                android:imeOptions="actionNext"
+                                android:inputType="none"
+                                android:paddingBottom="@dimen/ten_dip"
+                                android:paddingTop="@dimen/five_dip"
+                                android:singleLine="true"
+                                android:textColor="#ff757575"
+                                android:textSize="@dimen/fourteen_sp"
+                               />
+                       </android.support.design.widget.TextInputLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/twenty_dip"
+                            android:layout_marginRight="@dimen/twenty_dip" />
+
+                        <LinearLayout
+                            android:id="@+id/job_period"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dip"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/ten_dip"
+                                android:layout_weight="0.5"
+                                android:paddingLeft="@dimen/five_dip"
+                                android:text="From"
+                                android:textColor="#ff757575"
+                                android:textSize="@dimen/fourteen_sp" />
+
+                            <TextView
+                                android:id="@+id/toyear"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/ten_dip"
+                                android:layout_weight="0.5"
+                                android:paddingLeft="@dimen/five_dip"
+                                android:text="To"
+                                android:textColor="#ff757575"
+                                android:textSize="@dimen/fourteen_sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/start_job"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dip"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/start_month"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:editable="false"
+                                android:ellipsize="end"
+                                android:gravity="center|left"
+                                android:hint="MM"
+                                android:imeOptions="actionNext"
+                                android:inputType="none"
+                                android:paddingBottom="@dimen/ten_dip"
+                                android:paddingTop="@dimen/five_dip"
+                                android:singleLine="true"
+                                android:textColor="#ff757575"
+                                android:textSize="@dimen/fourteen_sp"
+                               />
+
+                            <EditText
+                                android:id="@+id/start_year"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:editable="false"
+                                android:ellipsize="end"
+                                android:gravity="center|left"
+                                android:hint="YY"
+                                android:imeOptions="actionNext"
+                                android:inputType="none"
+                                android:paddingBottom="@dimen/ten_dip"
+                                android:paddingTop="@dimen/five_dip"
+                                android:singleLine="true"
+                                android:textColor="#ff757575"
+                                android:textSize="@dimen/fourteen_sp"
+                               />
+
+                            <EditText
+                                android:id="@+id/end_month"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/five_dip"
+                                android:layout_weight="1.0"
+                                android:editable="false"
+                                android:ellipsize="end"
+                                android:gravity="center|left"
+                                android:hint="MM"
+                                android:imeOptions="actionNext"
+                                android:inputType="none"
+                                android:paddingBottom="@dimen/ten_dip"
+                                android:paddingTop="@dimen/five_dip"
+                                android:singleLine="true"
+                                android:textColor="#ff757575"
+                                android:textSize="@dimen/fourteen_sp"
+                               />
+
+                            <EditText
+                                android:id="@+id/end_year"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:editable="false"
+                                android:ellipsize="end"
+                                android:gravity="center|left"
+                                android:hint="YY"
+                                android:imeOptions="actionNext"
+                                android:inputType="none"
+                                android:paddingBottom="@dimen/ten_dip"
+                                android:paddingTop="@dimen/five_dip"
+                                android:singleLine="true"
+                                android:textColor="#ff757575"
+                                android:textSize="@dimen/fourteen_sp"
+                               />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/alert_check_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fifteen_dip"
+                            android:gravity="center_vertical">
+
+                            <CheckBox
+                                android:id="@+id/alert_check"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/twenty_4_dip"
+                                android:clickable="false"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/five_dip"
+                                android:text="current_job"
+                                android:textColor="#ff898989"
+                                android:textSize="@dimen/fourteen_sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/edu_details"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/ten_dip"
+                android:background="@drawable/box_profile_items"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/ten_dip"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/edu_block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/five_dip"
+                    android:paddingLeft="@dimen/five_dip"
+                    android:paddingTop="@dimen/ten_dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="@dimen/five_dip"
+                        android:text="Qualification"
+                        android:textColor="#ff5c6bc0"
+                        android:textSize="@dimen/eighteen_sp" />
+
+                    <TextView
+                        android:id="@+id/edu_col_exp_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="@dimen/five_dip"
+                        android:textColor="#ff4f86c7"
+                        android:textSize="20.0sp" />
+                </RelativeLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_qual_name"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/five_dip"
+                                android:textColorHint="@color/lableColor"
+                               >
+
+                                <EditText
+                                    android:id="@+id/qual_field"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/qualification_text"
+                                    android:drawableRight="@drawable/textdropdown_arrow"
+                                    android:editable="false"
+                                    android:ellipsize="end"
+                                    android:gravity="center|left"
+                                    android:hint="hint_qual"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="none"
+                                    android:paddingBottom="@dimen/ten_dip"
+                                    android:paddingTop="@dimen/five_dip"
+                                    android:singleLine="true"
+                                    android:textColor="#ff757575"
+                                    android:textSize="@dimen/fourteen_sp"
+                                   />
+</android.support.design.widget.TextInputLayout>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dip">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_edu_name"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/five_dip"
+                                android:textColorHint="@color/lableColor"
+                               >
+
+                                <EditText
+                                    android:id="@+id/edu_stream_field"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/specialization_text"
+                                    android:drawableRight="@drawable/textdropdown_arrow"
+                                    android:editable="false"
+                                    android:ellipsize="end"
+                                    android:gravity="center|left"
+                                    android:hint="hint_stream"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="none"
+                                    android:paddingBottom="@dimen/ten_dip"
+                                    android:paddingTop="@dimen/five_dip"
+                                    android:singleLine="true"
+                                    android:textColor="#ff757575"
+                                    android:textSize="@dimen/fourteen_sp"
+                                   />
+                            </android.support.design.widget.TextInputLayout>
+                        </RelativeLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_institute_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dip"
+                            android:textColorHint="@color/lableColor"
+                           >
+
+                            <TextView
+                                android:id="@+id/ins_name_field"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|left"
+                                android:hint="hint_institute"
+                                android:inputType="text"
+                                android:lines="1"
+                                android:paddingBottom="@dimen/ten_dip"
+                                android:paddingTop="@dimen/five_dip"
+                                android:textColor="#ff757575"
+                                android:textColorHint="@color/lableColor"
+                                android:textSize="@dimen/fourteen_sp"
+                               />
+</android.support.design.widget.TextInputLayout>
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ten_dip">
+
+                            <android.support.design.widget.TextInputLayout
+                               android:id="@+id/input_layout_course_type_name"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/five_dip"
+                                android:textColorHint="@color/lableColor"
+                               >
+
+                                <EditText
+                                    android:id="@+id/course_type_field"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/course_type"
+                                    android:drawableRight="@drawable/textdropdown_arrow"
+                                    android:editable="false"
+                                    android:ellipsize="end"
+                                    android:gravity="center|left"
+                                    android:hint="hint_course_type"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="none"
+                                    android:paddingBottom="@dimen/ten_dip"
+                                    android:paddingTop="@dimen/five_dip"
+                                    android:singleLine="true"
+                                    android:textColor="#ff757575"
+                                    android:textSize="@dimen/fourteen_sp"
+                                   />
+
+                            </android.support.design.widget.TextInputLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dip">
+
+                            <android.support.design.widget.TextInputLayout
+
+                               android:id="@+id/input_layout_passout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/five_dip"
+                                android:textColorHint="@color/lableColor"
+                               >
+
+
+                                <EditText
+                                   android:id="@+id/passout_yr_field"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/passout_yr"
+                                    android:drawableRight="@drawable/textdropdown_arrow"
+                                    android:editable="false"
+                                    android:ellipsize="end"
+                                    android:gravity="center|left"
+                                    android:hint="hint_passout_year"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="none"
+                                    android:paddingBottom="@dimen/ten_dip"
+                                    android:paddingTop="@dimen/five_dip"
+                                    android:singleLine="true"
+                                    android:textColor="#ff757575"
+                                    android:textSize="@dimen/fourteen_sp"
+                                   />
+                            </android.support.design.widget.TextInputLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/skill_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten_dip"
+                android:layout_marginRight="@dimen/ten_dip"
+                android:layout_marginTop="@dimen/ten_dip"
+                android:background="@drawable/box_profile_items"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/ten_dip"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/skills_block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:paddingBottom="@dimen/five_dip"
+                    android:paddingLeft="@dimen/five_dip"
+                    android:paddingTop="@dimen/ten_dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="@dimen/five_dip"
+                        android:text="Key skills"
+                        android:textColor="#ff5c6bc0"
+                        android:textSize="@dimen/eighteen_sp" />
+
+                    <TextView
+                        android:id="@+id/skil_col_exp_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="@dimen/five_dip"
+                        android:textColor="#ff4f86c7"
+                        android:textSize="20.0sp" />
+                </RelativeLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/skill_sub_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/ten_dip" />
+
+                    <TextView
+                        android:id="@+id/addMore"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/skill_sub_layout"
+                        android:layout_weight="1.0"
+                        android:gravity="end"
+                        android:paddingBottom="5.0dip"
+                        android:paddingRight="15.0dip"
+                        android:paddingTop="5.0dip"
+                        android:text="Add more"
+                        android:textColor="#ff4f86c7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/page_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal"
+                android:weightSum="2.0">
+
+                <LinearLayout
+                    android:id="@+id/skip_btn"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:background="@drawable/button_trans_apply"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/twelve_dip"
+                    android:paddingTop="@dimen/twelve_dip">
+
+                    <TextView
+                        android:id="@+id/skip_btn_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Skip"
+                        android:textColor="#ff333333"
+                        android:textSize="@dimen/sixteen_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/twelve_dip"
+                    android:paddingTop="@dimen/twelve_dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/submit_btn"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:background="@drawable/button_yellow"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/twelve_dip"
+                    android:paddingTop="@dimen/twelve_dip">
+
+                    <TextView
+                        android:id="@+id/submit_btn_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:text="Save"
+                        android:textColor="#ffffffff"
+                        android:textSize="@dimen/sixteen_sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>
+</LinearLayout>
